@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ESCOLAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ESTADOS">
+    <Key>
+      <PropertyRef Name="ESTADO_ID" />
+    </Key>
+    <Property Name="ESTADO_ID" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="DESCRICAO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UF" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ESCOLAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ESTADOS" EntityType="Self.ESTADOS" />
+  </EntityContainer>
+</Schema>
